@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tarefa</title>
+   <style>
+   
+.container {
+  background-color: mediumvioletred;
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "sidebar content"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
+
+.top { grid-area: top; background-color: #db0867;  padding: 10px; }
+.sidebar { grid-area: sidebar; background-color: #d46da9; padding: 10px; }
+.content { grid-area: content; background-color: #b816e1; padding: 20px; }
+.footer { grid-area: footer; background-color: #d38de1;  padding: 10px; }
+
+   </style>
+</head>
+<body>
+  <div class="container">
+    <header class="top">Topo</header>
+    <nav class="sidebar">Sidebar</nav>
+    <main class="content">Conteúdo</main>
+    <footer class="footer">Rodapé</footer>
+  </div>
+</body>
+</html>
